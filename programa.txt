@@ -1,0 +1,34 @@
+programa
+{
+	inclua biblioteca Arquivos --> arq
+	inteiro func
+	logico tem_arquivo = falso
+	
+	funcao inicio()
+	{
+	  inicializar()
+	  se(tem_arquivo)
+	  {
+	  	processar()
+	  	finalizar()	
+	  }
+	}
+	funcao inicializar()
+	{
+	 	cadeia caminho = "C:/CURSOLOGICA/funcionarios.txt"
+	 	tem_arquivo = arq.arquivo_existe(caminho)
+	 	se(tem_arquivo)
+	 		func = arq.abrir_arquivo(caminho,arq.MODO_LEITURA)
+	 	senao
+	 	   escreva("Arquivo não existe ")
+	}
+	funcao processar()
+	{
+	   cadeia linha
+	     linha = arq.ler_linha(func)
+	     escreva(linha)
+	}
+	funcao finalizar()
+	{
+	}
+}
