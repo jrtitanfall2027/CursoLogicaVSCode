@@ -2,7 +2,8 @@
        PROGRAM-ID.  CLIENTES.
       *********************************
       * OBJETIVO:  SISTEMA DE GESTAO DE CLIENTES
-      * AUTHOR  :  IVAN
+      * AUTHOR  :  REGINNALDO JUNIOR 
+      * DATA    :  25/11/2026 
       *********************************
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
