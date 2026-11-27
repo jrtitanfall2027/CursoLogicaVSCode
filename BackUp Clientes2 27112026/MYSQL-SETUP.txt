@@ -1,0 +1,15 @@
+REQUISITOS PARA USAR O MYSQL
+
+1. Mantenha o servico MySQL Server em execucao.
+2. Instale o MySQL Connector/ODBC 8.0 de 32 bits (x86), com o driver
+   Unicode. O CLIENTES.exe compilado neste projeto e de 32 bits.
+   O driver ODBC de 64 bits nao sera encontrado pelo executavel.
+3. Execute COMPILAR-CLIENTES.bat para gerar o CLIENTES.exe. Esse comando
+   usa chamadas estaticas para incluir a ponte C do MySQL; nao substitua
+   por uma compilacao simples de CLIENTES.cbl.
+4. Ao iniciar, informe a senha da aplicacao e depois a senha do MySQL.
+   A senha do MySQL e solicitada sem exibicao e nao e gravada pelo programa.
+
+O programa conecta a localhost:3306 como root. Na primeira conexao, cria
+o banco clientes_db e a tabela clientes, se ainda nao existirem. A tabela
+comeca vazia; CLIENTES.DAT permanece intacto e nao e importado.
